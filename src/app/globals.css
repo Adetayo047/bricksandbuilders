@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Bricks & Builders — black + gold editorial palette */
+  --color-ink: #0b0a08;
+  --color-ink-soft: #18150f;
+  --color-paper: #f6f1e7;
+  --color-paper-dim: #ece3d0;
+  --color-gold: #b0873c;
+  --color-gold-bright: #d9b062;
+  --color-on-ink: #f6f1e7;
+  --color-on-ink-muted: #a39b8a;
+  --color-on-paper: #171310;
+  --color-on-paper-muted: #6f6656;
+  --color-line-on-ink: rgb(246 241 231 / 15%);
+  --color-line-on-paper: rgb(23 19 16 / 12%);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-italiana), "Italiana", serif;
+  --font-display-alt: var(--font-fraunces), "Fraunces", serif;
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-on-paper);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.eyebrow::before {
+  content: "(";
+}
+
+.eyebrow::after {
+  content: ")";
+}
+
+/*
+ * Progressive enhancement: content is visible by default. The hidden
+ * pre-animation state only applies once .js-reveal-ready is present on
+ * <html>, which JS adds itself right before it starts observing. This way
+ * a JS error, slow connection, or disabled JS never leaves content stuck
+ * invisible — worst case, the fade-up animation just doesn't play.
+ */
+.js-reveal-ready .reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hairline-on-ink {
+  border-color: var(--color-line-on-ink);
+}
+
+.hairline-on-paper {
+  border-color: var(--color-line-on-paper);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

@@ -1,0 +1,290 @@
+[
+  {
+    "slug": "bricksville-estate-karshi",
+    "name": "Bricksville Estate",
+    "category": "Land",
+    "location": "Karshi, Abuja",
+    "summary": "FCDA-approved plots opposite Navy Estate Phase 3, behind Civil Defence Estate, Karshi — with a payment plan available.",
+    "description": "Bricksville Estate sits in Karshi, opposite Navy Estate Phase 3 and behind the Civil Defence Estate — one of Abuja's fastest-appreciating corridors. Plots are FCDA-approved with a flexible payment plan available, making this an accessible entry point for early land investment.",
+    "status": "Selling Fast",
+    "featured": true,
+    "heroTag": "FCDA Approved",
+    "stats": [
+      {
+        "label": "Plot Size",
+        "value": "150 sqm"
+      },
+      {
+        "label": "Title",
+        "value": "FCDA Approved"
+      },
+      {
+        "label": "Terms",
+        "value": "Payment Plan Available"
+      }
+    ],
+    "priceTiers": [
+      {
+        "label": "Standard Plot",
+        "sqm": "150 sqm",
+        "price": "₦1,100,000"
+      }
+    ],
+    "placeholderTone": "gold",
+    "flyer": "/photos/flyer-bricksville-karshi.jpg",
+    "cardImage": "/photos/card-bricksville-karshi.jpg"
+  },
+  {
+    "slug": "noble-villa-estate-asokoro",
+    "name": "The Noble Villa Estate",
+    "category": "Residential",
+    "location": "Asokoro Extension, behind NAF Valley Estate, Abuja",
+    "summary": "FCDA-approved terrace and fully-detached duplexes behind NAF Valley Estate, Asokoro Extension, with full estate infrastructure.",
+    "description": "The Noble Villa Estate offers terrace and fully-detached duplexes on an FCDA-approved layout behind NAF Valley Estate. The estate includes street lighting, perimeter fencing, a smart access road, security CCTV, dedicated power supply, and a recreational court.",
+    "status": "Available",
+    "featured": true,
+    "heroTag": "FCDA Approved",
+    "stats": [
+      {
+        "label": "Location",
+        "value": "Asokoro Extension"
+      },
+      {
+        "label": "Title",
+        "value": "FCDA Approved"
+      },
+      {
+        "label": "Infrastructure",
+        "value": "Fenced, CCTV, Power"
+      }
+    ],
+    "priceTiers": [
+      {
+        "label": "4-Bedroom Terraced Duplex",
+        "sqm": "250 sqm",
+        "price": "₦6.3M"
+      },
+      {
+        "label": "4-Bedroom Fully Detached Duplex + BQ",
+        "sqm": "400 sqm",
+        "price": "₦10M"
+      },
+      {
+        "label": "4-Bedroom Fully Detached Duplex + 2-Bed BQ",
+        "sqm": "500 sqm",
+        "price": "₦12.5M"
+      }
+    ],
+    "placeholderTone": "paper",
+    "flyer": "/photos/flyer-noble-villa-asokoro.jpg",
+    "cardImage": "/photos/card-noble-villa-asokoro.jpg"
+  },
+  {
+    "slug": "champion-abode-estate-kurudu",
+    "name": "Champion Abode Estate",
+    "category": "Land",
+    "location": "Kurudu, opposite Post Army Housing Estate, Abuja",
+    "summary": "Now selling — titled plots opposite Post Army Housing Estate, Kurudu, at ₦10,000 per sqm.",
+    "description": "Champion Abode Estate is opposite the Post Army Housing Estate in Kurudu, with FCDA and R-O-F-O title documentation. Plots are priced at a flat ₦10,000 per square metre and are currently selling.",
+    "status": "Selling Fast",
+    "featured": false,
+    "heroTag": "Now Selling",
+    "stats": [
+      {
+        "label": "Title",
+        "value": "FCDA, R-O-F-O"
+      },
+      {
+        "label": "Rate",
+        "value": "₦10,000 / sqm"
+      },
+      {
+        "label": "Status",
+        "value": "Now Selling"
+      }
+    ],
+    "priceTiers": [
+      {
+        "label": "Standard Plot",
+        "sqm": "250 sqm",
+        "price": "₦2.5M"
+      },
+      {
+        "label": "Double Plot",
+        "sqm": "500 sqm",
+        "price": "₦5M"
+      }
+    ],
+    "placeholderTone": "ink",
+    "flyer": "/photos/flyer-champion-abode-kurudu.jpg",
+    "cardImage": "/photos/card-champion-abode-kurudu.jpg"
+  },
+  {
+    "slug": "solaris-court-estate-life-camp",
+    "name": "Solaris Court Estate",
+    "category": "Residential",
+    "location": "Life Camp, Abuja",
+    "summary": "Now selling — terrace duplexes to block apartments in Life Camp, from ₦11.5M.",
+    "description": "Solaris Court Estate in Life Camp spans five configurations, from 3-bedroom terrace duplexes to a 6-unit block of 3-bedroom flats, giving buyers a range of entry points in one of Abuja's established residential districts.",
+    "status": "Selling Fast",
+    "featured": true,
+    "heroTag": "Now Selling",
+    "stats": [
+      {
+        "label": "Location",
+        "value": "Life Camp"
+      },
+      {
+        "label": "Unit Types",
+        "value": "5 configurations"
+      },
+      {
+        "label": "Status",
+        "value": "Now Selling"
+      }
+    ],
+    "priceTiers": [
+      {
+        "label": "3-Bedroom Terrace Duplex",
+        "sqm": "150 sqm",
+        "price": "₦11.5M"
+      },
+      {
+        "label": "4-Bedroom Semi-Detached Duplex",
+        "sqm": "200 sqm",
+        "price": "₦15M"
+      },
+      {
+        "label": "4-Bedroom Fully Detached Duplex",
+        "sqm": "300 sqm",
+        "price": "₦22.5M"
+      },
+      {
+        "label": "5-Bedroom Fully Detached Duplex",
+        "sqm": "450 sqm",
+        "price": "₦35M"
+      },
+      {
+        "label": "6 Units — 3-Bedroom Block of Flats",
+        "sqm": "750 sqm",
+        "price": "₦55M"
+      }
+    ],
+    "placeholderTone": "gold",
+    "flyer": "/photos/flyer-solaris-court-lifecamp.jpg",
+    "cardImage": "/photos/card-solaris-court-lifecamp.jpg",
+    "cardImageIsStock": true
+  },
+  {
+    "slug": "hutu-prestige-polo-lake-resort",
+    "name": "HUTU Prestige Polo Lake Resort",
+    "category": "Land",
+    "location": "Airport Road, Abuja",
+    "summary": "Own a piece of Abuja's next luxury destination on Airport Road — fast-paced development with strong ROI potential.",
+    "description": "HUTU Prestige Polo Lake Resort sits on Airport Road, one of Abuja's fastest-developing corridors. With a prime location and excellent ROI potential, it's positioned as a smart choice for both investors and homeowners looking to build wealth through real estate.",
+    "status": "Available",
+    "featured": true,
+    "heroTag": "New Listing",
+    "stats": [
+      { "label": "Location", "value": "Airport Road" },
+      { "label": "Plot sizes", "value": "150 – 500 sqm" },
+      { "label": "Status", "value": "Available" }
+    ],
+    "priceTiers": [
+      { "label": "Standard Plot", "sqm": "150 sqm", "price": "₦12M" },
+      { "label": "Standard Plot", "sqm": "250 sqm", "price": "₦20M" },
+      { "label": "Standard Plot", "sqm": "400 sqm", "price": "₦32M" },
+      { "label": "Standard Plot", "sqm": "500 sqm", "price": "₦40M" }
+    ],
+    "placeholderTone": "gold"
+  },
+  {
+    "slug": "builders-empire-lugbe",
+    "name": "Builders Empire",
+    "category": "Residential",
+    "location": "Lugbe, beside Centenary City, Abuja",
+    "summary": "Flexible residential living beside Centenary City — terraces, semi-detached, and block apartments built for owner-occupiers and investors alike.",
+    "description": "Builders Empire brings five configurations to one estate, so buyers can match unit type to budget without leaving the development. Strategically positioned beside Centenary City with quick access to the airport road, it's built for both immediate move-in and rental yield.",
+    "status": "Available",
+    "featured": true,
+    "heroTag": "Residential Development",
+    "stats": [
+      {
+        "label": "Unit types",
+        "value": "5 configurations"
+      },
+      {
+        "label": "Location",
+        "value": "Beside Centenary City"
+      },
+      {
+        "label": "Completion",
+        "value": "Phase 1 ongoing"
+      }
+    ],
+    "priceTiers": [
+      {
+        "label": "3-Bedroom Terrace Duplex",
+        "sqm": "150 sqm",
+        "price": "₦3.5M"
+      },
+      {
+        "label": "4-Bedroom Semi-Detached Duplex",
+        "sqm": "250 sqm",
+        "price": "₦5M"
+      },
+      {
+        "label": "4-Bedroom Fully Detached Duplex",
+        "sqm": "350 sqm",
+        "price": "₦6.5M"
+      },
+      {
+        "label": "5-Bedroom Fully Detached Duplex",
+        "sqm": "500 sqm",
+        "price": "₦7.5M"
+      },
+      {
+        "label": "6 Units — 3-Bedroom Block Apartments",
+        "sqm": "750 sqm",
+        "price": "₦10.5M"
+      }
+    ],
+    "placeholderTone": "ink",
+    "cardImage": "/photos/card-builders-empire-lugbe.jpg",
+    "cardImageIsStock": true
+  },
+  {
+    "slug": "aso-drive-maitama",
+    "name": "ASO Drive Residence",
+    "category": "Luxury",
+    "location": "ASO Drive, Maitama, Abuja",
+    "summary": "Minutes from the Presidential Villa and Maitama — a rare fully-detached mansion on a tarred, prestige address.",
+    "description": "A 6-bedroom fully detached mansion with a 6-bedroom chalet, 2-bedroom BQ, and a private worship centre, all on ASO Drive — one of Abuja's most exclusive addresses. This is a once-available property for buyers who understand what an address like this represents.",
+    "status": "Available",
+    "featured": true,
+    "heroTag": "Luxury Estate",
+    "stats": [
+      {
+        "label": "Bedrooms",
+        "value": "6 + 6-bed chalet"
+      },
+      {
+        "label": "Extras",
+        "value": "2-bed BQ, worship centre"
+      },
+      {
+        "label": "Address",
+        "value": "ASO Drive, Maitama"
+      }
+    ],
+    "priceTiers": [
+      {
+        "label": "Full Estate",
+        "price": "Price on request"
+      }
+    ],
+    "placeholderTone": "paper",
+    "cardImage": "/photos/card-aso-drive-maitama.jpg",
+    "cardImageIsStock": true
+  }
+]

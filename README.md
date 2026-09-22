@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bricks & Builders — Marketing Site
 
-## Getting Started
+Next.js 16 (App Router) + Tailwind CSS v4 marketing/lead-gen site for Bricks & Builders
+Property Limited (Abuja, Nigeria). See `/Users/phillipadetunji/.claude/plans/gleaming-whistling-owl.md`
+for the full design/build plan this implements.
 
-First, run the development server:
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Opens on `http://localhost:3000` by default (or via the `bricks-and-builders` launch
+config on port 3100).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Current state
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- All pages built and working: Home, Properties (with category filter), Property detail,
+  About, Services, Gallery, Contact.
+- Property data lives in `src/lib/properties.ts` as typed local data — **not yet wired to
+  a live CMS**. The shape matches what the future Sanity schema will store, so swapping in
+  real data later is a data-layer change, not a redesign.
+- Contact/inquiry forms use a Next.js Server Action (`src/lib/actions.ts`) with Resend.
+  Without `RESEND_API_KEY` set, submissions are logged to the server console instead of
+  emailed — this lets the form be tested end-to-end before real credentials exist.
+- **Real content pulled from Facebook (logged-in session) and Instagram's public preview
+  metadata**: actual logo (`public/logo.jpg` / `logo-mark.png` / `logo-full.jpg`), CAC
+  registration number (RC 7692089), and official listing flyers for 4 of the 6
+  developments (`public/photos/flyer-*.jpg`). Two developments — Builders Empire and ASO
+  Drive — still use placeholder line-art (`src/components/PlaceholderImage.tsx`) since no
+  flyer/photo was found for them; swap those out if/when real photos arrive.
+- **Note**: their own flyers advertise `www.bricksandbuildersproperties.com` — that domain
+  does not currently resolve (checked via DNS). Worth registering it to match existing
+  printed/social marketing if this site is meant to replace it.
 
-## Learn More
+## Next steps (require your input / accounts — not something I can do standalone)
 
-To learn more about Next.js, take a look at the following resources:
+1. **Real photography/renders.** This is the biggest blocker for the Hestia-style visual
+   treatment described in the plan. Get high-res photos or 3D renders for Karshi, Builders
+   Empire, and ASO Drive from the client, then swap them into `PlaceholderImage` usages.
+2. **Resend account + API key.** Sign up at resend.com, verify a sending domain, and set
+   `RESEND_API_KEY` (and optionally `CONTACT_TO_EMAIL` / `CONTACT_FROM_EMAIL`) as env vars.
+3. **Sanity CMS.** Requires creating an account (`npx sanity login`) — that's an account
+   signup step I won't do on your behalf. Once you have a project ID, the schema files
+   (`property`, `testimonial`, `siteSettings` per the plan) still need to be written and
+   `src/lib/properties.ts` swapped for a `next-sanity` GROQ query.
+4. **CAC registration number** and confirmed legal spelling — currently unverified, flagged
+   in the original research as a trust-signal gap.
+5. **Domain + Vercel deployment** once the client has a domain to point.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+RESEND_API_KEY=
+CONTACT_TO_EMAIL=
+CONTACT_FROM_EMAIL=
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All optional in development (see fallback behavior above); required for real email in
+production.
