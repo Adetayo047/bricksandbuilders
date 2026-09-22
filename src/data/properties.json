@@ -197,7 +197,9 @@
       { "label": "Standard Plot", "sqm": "400 sqm", "price": "₦32M" },
       { "label": "Standard Plot", "sqm": "500 sqm", "price": "₦40M" }
     ],
-    "placeholderTone": "gold"
+    "placeholderTone": "gold",
+    "cardImage": "/photos/card-hutu-polo-lake-resort.jpg",
+    "cardImageIsStock": true
   },
   {
     "slug": "builders-empire-lugbe",
