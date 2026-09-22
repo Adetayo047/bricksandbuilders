@@ -77,7 +77,8 @@
     ],
     "placeholderTone": "paper",
     "flyer": "/photos/flyer-noble-villa-asokoro.jpg",
-    "cardImage": "/photos/card-noble-villa-asokoro.jpg"
+    "cardImage": "/photos/card-noble-villa-asokoro.jpg",
+    "cardImageIsStock": true
   },
   {
     "slug": "champion-abode-estate-kurudu",
